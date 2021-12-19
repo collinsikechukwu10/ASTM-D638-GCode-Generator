@@ -1,0 +1,173 @@
+{
+  "data": [
+    {
+      "type": "number",
+      "name": "layer_thickness",
+      "section": "Layer Settings",
+      "initial_value": 2,
+      "min_value": 0,
+      "max_value": 120,
+      "step": 1
+    },
+    {
+      "type": "number",
+      "name": "layer_width",
+      "section": "Layer Settings",
+      "initial_value": 10,
+      "min_value": 0,
+      "max_value": 120,
+      "step": 1
+    },
+    {
+      "type": "number",
+      "name": "layer_length",
+      "section": "Layer Settings",
+      "initial_value": 20,
+      "min_value": 0,
+      "max_value": 120,
+      "step": 1
+    },
+    {
+      "type": "number",
+      "name": "layer_raster_spacing",
+      "section": "Layer Settings",
+      "initial_value": 0.4,
+      "min_value": 0,
+      "max_value": 120,
+      "step": 0.1
+    },
+    {
+      "type": "number",
+      "name": "filament_size",
+      "section": "3D Printer Settings",
+      "initial_value": 0.4,
+      "min_value": 0,
+      "max_value": 120,
+      "step": 1
+    },
+    {
+      "type": "number",
+      "name": "sample_midsection_width",
+      "section": "Test Sample Settings",
+      "initial_value": 1,
+      "min_value": 0,
+      "max_value": 120,
+      "step": 1
+    },
+    {
+      "type": "number",
+      "name": "sample_midsection_height",
+      "section": "Test Sample Settings",
+      "initial_value": 1,
+      "min_value": 0,
+      "max_value": 120,
+      "step": 1
+    },
+    {
+      "type": "category",
+      "name": "printer_type",
+      "section": "3D Printer Settings",
+      "initial_value": 1,
+      "choices": [
+        0,
+        1
+      ]
+    },
+    {
+      "type": "number",
+      "name": "nozzle_temperature",
+      "section": "3D Printer Settings",
+      "initial_value": 200,
+      "min_value": 0,
+      "max_value": 400,
+      "step": 1
+    },
+    {
+      "type": "number",
+      "name": "bed_temperature",
+      "section": "3D Printer Settings",
+      "initial_value": 60,
+      "min_value": 0,
+      "max_value": 120,
+      "step": 1
+    },
+    {
+      "type": "number",
+      "name": "nozzle_diameter",
+      "section": "3D Printer Settings",
+      "initial_value": 0.4,
+      "min_value": 0,
+      "max_value": 120,
+      "step": 1
+    },
+    {
+      "type": "boolean",
+      "name": "add_adhesion",
+      "section": "3D Printer Settings",
+      "initial_value": false
+    },
+    {
+      "type": "number",
+      "name": "adhesion_layer_width",
+      "section": "3D Printer Settings",
+      "initial_value": 12,
+      "min_value": 0,
+      "max_value": 120,
+      "step": 1
+    },
+    {
+      "type": "number",
+      "name": "adhesion_layer_thickness",
+      "section": "3D Printer Settings",
+      "initial_value": 4,
+      "min_value": 0,
+      "max_value": 120,
+      "step": 1
+    },
+    {
+      "type": "number",
+      "name": "initialization_speed",
+      "section": "3D Printer Settings",
+      "initial_value": 4000,
+      "min_value": 0,
+      "max_value": 8000,
+      "step": 1
+    },
+    {
+      "type": "number",
+      "name": "print_speed",
+      "section": "3D Printer Settings",
+      "initial_value": 2850,
+      "min_value": 0,
+      "max_value": 8000,
+      "step": 1
+    },
+    {
+      "type": "number",
+      "name": "start_point_x",
+      "section": "Test Sample Settings",
+      "initial_value": 0,
+      "min_value": 0,
+      "max_value": 120,
+      "step": 1
+    },
+    {
+      "type": "number",
+      "name": "start_point_y",
+      "section": "Test Sample Settings",
+      "initial_value": 0,
+      "min_value": 0,
+      "max_value": 120,
+      "step": 1
+    },
+    {
+      "type": "number",
+      "name": "sample_height",
+      "section": "Test Sample Settings",
+      "initial_value": 100,
+      "min_value": 0,
+      "max_value": 120,
+      "step": 1
+    }
+  ]
+}

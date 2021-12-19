@@ -1,0 +1,1 @@
+streamlit run main.py 8181

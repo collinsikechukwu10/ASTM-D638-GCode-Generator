@@ -1,6 +1,5 @@
 from collections import defaultdict
 from typing import List
-
 from streamlit import empty, expander
 from generator import CoordinateGenerator
 from settings import BaseConfig
@@ -28,7 +27,7 @@ class GCODETextRenderer(ResultRenderer):
     default_text = "GCODE text shown here.."
 
     def render(self, generator: CoordinateGenerator):
-        self.container.text(generator.gcode())
+        self.container.download_button("Download GCODE", generator.gcode(as_bytes=True), file_name=".gcode")
 
 
 class ConfigRenderer:

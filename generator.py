@@ -93,6 +93,11 @@ class CoordinateGenerator:
             self._add_path(cx, end_y, layer_z)
             self._add_path(cx, start_y, layer_z)
 
+    def _get_start_and_end_points(self, layer_z):
+        # use this to controll which section it is
+
+        pass
+
     def _build_adhesion_layer(self, start_x, start_y, z_layer, adhesion_width):
         adhes_end_x = adhes_end_y = adhesion_width
         c_x = start_x - adhes_end_x
@@ -122,7 +127,7 @@ class CoordinateGenerator:
             f"X{coord.x:.4f} Y{coord.y:.4f} Z{coord.z:.4f} E{coord.e:.4f};\n" for idx, coord in
             enumerate(self._coords)])
         gcode += self._prepare_close_code()
-        return bytes(gcode) if as_bytes else gcode
+        return bytes(gcode.encode("utf8")) if as_bytes else gcode
 
     def df(self):
         return pd.DataFrame(map(lambda i: i.tuple(), self._coords), columns=["X", "Y", "Z", "E"])
@@ -222,3 +227,7 @@ class GcodeProcessor:
     def load(self):
         print("...........building...........")
         self.build_generator()
+
+
+# lets create the shoulders
+
